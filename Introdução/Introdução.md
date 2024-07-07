@@ -44,6 +44,31 @@ eu optei pelo `MySQL Installer for Windows`
 ### Comandos utéis para MySQL    
 ![image](https://github.com/Larissarff/SQL-Studies/assets/164913651/a5984a03-d181-4740-a099-c75374b6a6b3)
 
+### SQL Workbench 
+Uma 
+
+### Buscar a pasta bin
+Vá nos arquivos do computador no caminho:
+      
+        - C:\Program Files\MySQL\MySQL Server 8.0\bin
+Ou no caminho que você encontre sua pasta bin e copie esse caminho.
+
+Após isso, clique no ícone do windows do teclado e busque "editar variáveis do sistema" >
+vá em Avançado > 
+variáveis de ambiente >
+variáveis de uso > 
+pasta Path e dê dois cliques > 
+clique em Novo e adicione o caminho da pasta bin que copiamos anteriormente e salve.
+
+Abra o seu terminal, eu utilizei o power shell e escreva:
+       
+       - mysql --version
+Veja se a saída é algo como:
+
+     - C:\Program Files\MySQL\MySQL Server 8.0\bin\mysql.exe  Ver 8.0.38 for Win64 on x86_64 (MySQL Community Server - GPL)
+
+Se sim, a instalação está ok! Se não, busque refazer o passo anterior de modificar as variáveis do sistema.
+
 
 
 
