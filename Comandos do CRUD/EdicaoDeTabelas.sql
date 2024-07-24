@@ -32,8 +32,10 @@ INSERT INTO pessoas VALUES ( 'Maria', '789576901', '15261237700', 10);
 SELECT * FROM pessoas WHERE nome = "Maria";
 -- Comando de refino de busca, utilizando WHERE podemos aplicar a pesquisa apenas quando na coluna nome estiver "Maria".
 
+SET SQL_SAFE_UPDATES = 0;       -- SAFE UPDATE
+UPDATE pessoas SET limite = 1;  -- Atualiza todas as linhas da coluna limite como 1
+SELECT *FROM pessoas;           -- Imprime os dados na tabela
 
-
-
-
-
+SET SQL_SAFE_UPDATES = 0;                                -- SAFE UPDATE 
+UPDATE pessoas SET limite = 100 WHERE nome = 'Larissa';  -- Atualiza o numero de limite para 100 quando o nome = Larissa
+SELECT nome, limite FROM pessoas WHERE nome = 'Larissa'; -- Mostra a tabela nas colunas nome e limite quando o nome = Larissa
