@@ -2,10 +2,10 @@
 ## Curso da empresa Udemy `SQL do básico ao avançado (com MySQL e Projeto)`
 
 ### Conjunto de tópicos do curso:
-- Introdução:
-- Gerenciamento de banco de dados
-- Gerenciamento de tabelas
-- Queries do CRUD
+- Introdução &#10004;
+- Gerenciamento de banco de dados &#10004;
+- Gerenciamento de tabelas &#10004;
+- Queries do CRUD &#10004;
 - Avançado em SELECTs
 - Criando constraints nas tabelas
 - Unindo tabelas com JOINs
