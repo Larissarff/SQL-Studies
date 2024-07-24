@@ -20,5 +20,20 @@ INSERT INTO pessoas (nome, rg, cpf, limite) VALUES ( 'Rodrigo', '636376901', '18
 INSERT INTO pessoas (nome, rg, cpf, limite) VALUES ( 'Juraci', '858576901', '15261767700', 9);
 -- execute
 
-SELECT * FROM cadastro.pessoas;
+SELECT * FROM pessoas; -- Comando de exibir a tabela inteira ( "*" significa "ALL", para exibir todas as colunas da tabela)
 -- execute
+
+SELECT nome, cpf FROM pessoas;  -- Comando de exibir apenas as colunas desejadas, no caso, nome e cpf.
+
+INSERT INTO pessoas VALUES ( 'Maria', '789576901', '15261237700', 10); 
+-- Comando de inserção de dados na tabela omitindo as colunas, pois subentende-se que são em todas em ordem da primeira á ultima. 
+-- SQL permite essa omissão em caso de preenchimento de todas as colunas
+
+SELECT * FROM pessoas WHERE nome = "Maria";
+-- Comando de refino de busca, utilizando WHERE podemos aplicar a pesquisa apenas quando na coluna nome estiver "Maria".
+
+
+
+
+
+
