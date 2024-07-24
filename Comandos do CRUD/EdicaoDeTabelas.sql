@@ -39,3 +39,10 @@ SELECT *FROM pessoas;           -- Imprime os dados na tabela
 SET SQL_SAFE_UPDATES = 0;                                -- SAFE UPDATE 
 UPDATE pessoas SET limite = 100 WHERE nome = 'Larissa';  -- Atualiza o numero de limite para 100 quando o nome = Larissa
 SELECT nome, limite FROM pessoas WHERE nome = 'Larissa'; -- Mostra a tabela nas colunas nome e limite quando o nome = Larissa
+
+DELETE FROM pessoas WHERE limite = 100;  -- Deleção de linhas com base na condição após o WHERE. Delete a linha se limite for = á 100.
+DELETE FROM pessoas WHERE limite > 200;  -- Deleção de linhas com base na condição após o WHERE. Delete a linha se limite for maior que 200.
+SELECT * FROM pessoas;                   -- Mostrar tabela toda
+
+-- OBS:
+DELETE FROM pessoas; -- APAGA TODA A TABELA!!! NÃO FAZER (sem volta)
