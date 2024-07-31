@@ -6,7 +6,7 @@
 - Gerenciamento de banco de dados &#10004;
 - Gerenciamento de tabelas &#10004;
 - Queries do CRUD &#10004;
-- Avançado em SELECTs
+- Avançado em SELECTs &#10004
 - Criando constraints nas tabelas
 - Unindo tabelas com JOINs
 - Agrupamentos de resultados e Subqueries
