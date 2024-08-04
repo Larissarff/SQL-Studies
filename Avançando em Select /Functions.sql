@@ -30,3 +30,7 @@ SELECT * FROM employees WHERE first_name LIKE %ber%;
 -- selecione em todas as colunas da tabela employees todos os dado squando a coluna first_name tiver dados que contém "ber"
 -- ex: pessoas com nome bernardo, roberta, etc. terão todas as suas colunas exbidas.
 
+USE employees;
+SELECT COUNT(*) AS mulheres FROM employees WHERE gender = 'F' AND birth_date > '1990-02-01';
+
+-- O numero de mulheres que fazem aniversário depois de 01/02/1990 expresso em uma coluna (mulheres).
