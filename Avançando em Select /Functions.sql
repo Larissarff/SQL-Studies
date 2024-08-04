@@ -20,7 +20,7 @@ SELECT AVG(salary) AS media FROM salaries WHERE salary > 100000;
 -- cria uma nova coluna "media" onde traz a media dos salários maiores que 100.000
 
 --FUNÇÃO SUM: retorna a soma dos valores do fltro
-SELEC SUM(salary) FROM salaries;  -- Soma de todos os valores da coluna salario
+SELECT SUM(salary) FROM salaries;  -- Soma de todos os valores da coluna salario
 
 SELECT SUM(salary) FROM salaries ORDER BY salary DESC LIMIT 5; -- # NAO FUNCIONA com ORDER BY LIMIT
 SELECT SUM(salary) FROM salaries WHERE salary > 100000;        -- Esse sim filtra correto
